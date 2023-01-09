@@ -1,0 +1,138 @@
+.interactive-rating-component {
+    background: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
+    width: 412px;
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    flex-direction: column;
+    padding: 32px 39px 32px 32px;
+    border-radius: 30px;
+}
+
+.interactive-rating-component .star-icon {
+    background-color: var(--dark-blue);
+    padding: 16.375px 15.625px 15.625px;
+    border-radius: 50%;
+}
+
+.interactive-rating-component .informations {
+    display: flex;
+    gap: 7px;
+    flex-direction: column;
+}
+
+.interactive-rating-component .informations .title {
+    color: var(--white);
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.interactive-rating-component .informations .description {
+    color: var(--light-grey);
+}
+
+.interactive-rating-component .rating-buttons-space {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.interactive-rating-component .rating-buttons-space .rating-button {
+    background-color: var(--dark-blue);
+    color: var(--medium-grey);
+    font-size: 16px;
+    font-weight: 700;
+    height: 51px;
+    width: 51px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: background-color .2s ease-in-out, color .2s ease-in-out;
+}
+
+.interactive-rating-component .rating-buttons-space .rating-button:hover {
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+.interactive-rating-component .rating-buttons-space .rating-button.selected {
+    background-color: var(--medium-grey);
+    color: var(--white);
+}
+
+.interactive-rating-component .submit-button {
+    background-color: var(--orange);
+    color: var(--white);
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 11px 0;
+    border-radius: 22.5px;
+    transition: background-color .2s ease-in-out, color .2s ease-in-out;
+    cursor: initial;
+}
+
+.interactive-rating-component .submit-button:hover {
+    background-color: var(--white);
+    color: var(--orange);
+}
+
+.interactive-rating-component .submit-button.active {
+    cursor: pointer;
+}
+
+.interactive-rating-component.submitted {
+    align-items: center;
+    gap: 32px;
+}
+
+.interactive-rating-component .selected-grade-notification {
+    background-color: var(--dark-blue);
+    color: var(--orange);
+    padding: 4px 20px 0;
+    border-radius: 22.5px;
+}
+
+.interactive-rating-component.submitted .informations {
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .interactive-rating-component {
+        width: 327px;
+        gap: 21px;
+        padding: 24px 24px 32px;
+        border-radius: 15px;
+    }
+
+    .interactive-rating-component .star-icon {
+        padding: 12px 11.63px;
+    }
+
+    .interactive-rating-component .informations {
+        gap: 10px;
+    }
+
+    .interactive-rating-component .informations .title {
+        font-size: 24px;
+    }
+
+    .interactive-rating-component .rating-buttons-space .rating-button {
+        font-size: 14px;
+        height: 42px;
+        width: 42px;
+    }
+
+    .interactive-rating-component .submit-button {
+        font-size: 14px;
+        letter-spacing: 1.86667px;
+        padding: 12px 0;
+    }
+
+    .interactive-rating-component .selected-grade-notification {
+        padding: 4.5px 12px .5px;
+    }
+}
