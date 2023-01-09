@@ -29,6 +29,7 @@
 
 .interactive-rating-component .informations .description {
     color: var(--light-grey);
+    line-height: 24px;
 }
 
 .interactive-rating-component .rating-buttons-space {
